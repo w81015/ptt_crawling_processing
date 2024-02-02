@@ -8,7 +8,7 @@ PTT 爬蟲與資料處理，旨在從 PTT (批踢踢實業坊) 的特定看板�
 
 ```bash
 git clone https://github.com/w81015/ptt-crawling-processing.git
-cd ptt-crawler
+cd ptt-crawling-processing
 pip install -r requirements.txt
 ```
 
