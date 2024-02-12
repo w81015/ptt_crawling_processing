@@ -9,7 +9,7 @@ PTT 爬蟲與資料處理，旨在從 PTT (批踢踢實業坊) 的特定看板�
 本項目在 Python 3.8 及以上版本測試通過。使用前，請確保您已經安裝了 Python 和 pip。接下來，安裝所需的第三方庫：
 
 ```bash
-git clone https://github.com/w81015/ptt-crawling-processing.git
+git clone https://github.com/w81015/ptt_crawling_processing.git
 cd ptt-crawling-processing
 pip install -r requirements.txt
 ```
