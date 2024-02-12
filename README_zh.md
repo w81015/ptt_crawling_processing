@@ -1,4 +1,4 @@
-[English version](README.md)
+[English version 英文版](README.md)
 
 # PTT 爬蟲與資料處理
 
