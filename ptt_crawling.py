@@ -86,7 +86,7 @@ def main(url, pages, csv_file_path):
                 with open(csv_file_path, 'a', newline='', encoding='utf_8_sig') as csvfile:
                     writer = csv.writer(csvfile)
                     writer.writerow([article_data['author'], article_data['board'], article_data['title'], article_data['date'], article_data['content'], pushes, boos, arrows, article_data['link'], comments_json])
-            time.sleep(0.1)
+            time.sleep(1)
         response = requests.get(url, headers=headers)
         soup = BeautifulSoup(response.text, 'html.parser')
         next_page = 'https://www.ptt.cc' + soup.find('a', string='‹ 上頁')['href']
@@ -95,7 +95,7 @@ def main(url, pages, csv_file_path):
 
 # 替換成要爬取的PTT板網址、頁數、要儲存的檔名
 if __name__ == "__main__":
-    url = 'https://www.ptt.cc/bbs/Gossiping/index.html'
-    pages = 1
-    csv_file_path = 'ptt_gossiping.csv'
+    url = 'https://www.ptt.cc/bbs/Bank_Service/index.html'
+    pages = 20
+    csv_file_path = 'ptt_bank_service.csv'
     main(url, pages, csv_file_path)

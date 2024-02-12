@@ -1,45 +1,47 @@
-# PTT 爬蟲與資料處理
+[中文版 Chinese version](README_zh.md)
 
-PTT 爬蟲與資料處理，旨在從 PTT (批踢踢實業坊) 的特定看板抓取文章、留言等資料，並對這些數據進行處理和分析，最終將處理後的數據保存為 CSV 文件，方便進一步的數據分析和挖掘。
+# PTT Crawling and Data Processing
 
-## 安裝
+PTT Crawling and Data Processing is aimed at fetching articles, comments, and other data from specific boards on PTT (Taipei Technology Emporium) and processing these datasets for analysis. Finally, the processed data is saved as CSV files, facilitating further data analysis and mining.
 
-本項目在 Python 3.8 及以上版本測試通過。使用前，請確保您已經安裝了 Python 和 pip。接下來，安裝所需的第三方庫：
+## Installation
 
-```bash
+This project has been tested on Python 3.8 and higher versions. Before beginning, ensure you have installed Python and pip. Next, install the necessary third-party libraries:
+
+\```bash
 git clone https://github.com/w81015/ptt-crawling-processing.git
 cd ptt-crawling-processing
 pip install -r requirements.txt
-```
+\```
 
-## 使用方法
+## Usage
 
-### 運行
+### Running
 
-抓取指定看板的帖子數據：
+To fetch posts data from a specified board:
 
-```bash
+\```bash
 python ptt_crawling.py
-```
+\```
 
-執行後會從 Gossiping 看板抓取最新頁的資料，並保存在csv文件中。可自行替換成其他看板、指定頁數和存放位置。
+After execution, it fetches the latest page data from the Gossiping board and saves it in a CSV file. This can be replaced with other boards, specify the number of pages, and set the storage location.
 
-### 處理抓取的數據
+### Processing the Fetched Data
 
-處理抓取的數據：
+To process the fetched data:
 
-```bash
+\```bash
 python ptt_data_processing.py
-```
+\```
 
-執行後會將抓取下來的資料，分成文章、留言兩個資料集，分別儲存為 CSV 文件。
+After running, it will divide the fetched data into two datasets: articles and comments, each saved as a CSV file.
 
-## 功能
+## Features
 
-- 從指定的 PTT 看板抓取帖子資料，包括作者、標題、日期、內容等。
-- 對抓取的數據進行處理，包括數據清洗和格式化。
-- 將處理後的數據保存為 CSV 文件，便於進行數據分析和挖掘。
+- Fetches post data from specified PTT boards, including author, title, date, content, etc.
+- Processes the fetched data, including data cleaning and formatting.
+- Saves the processed data as CSV files, facilitating data analysis and mining.
 
-## 貢獻
+## Contribution
 
-歡迎任何形式的貢獻，無論是新功能、程式碼修正，或是問題報告。
+Contributions of any form are welcome, whether it's new features, code corrections, or issue reports.

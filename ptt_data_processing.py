@@ -55,7 +55,7 @@ def save_to_csv(all_info, all_comments):
 
 
 def main():
-    filename = 'ptt_gossiping.csv'
+    filename = 'ptt_bank_service.csv'
     all_info = info(filename)
     all_info = title_processing(all_info)
     all_info = column_name_processing(all_info)
