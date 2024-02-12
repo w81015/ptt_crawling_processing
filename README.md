@@ -9,7 +9,7 @@ PTT Crawling and Data Processing is aimed at fetching articles, comments, and ot
 This project has been tested on Python 3.8 and higher versions. Before beginning, ensure you have installed Python and pip. Next, install the necessary third-party libraries:
 
 \```bash
-git clone https://github.com/w81015/ptt-crawling-processing.git
+git clone https://github.com/w81015/ptt_crawling_processing.git
 cd ptt-crawling-processing
 pip install -r requirements.txt
 \```
